@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  #main {
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  #top {
+    position: relative;
+    width: 100%;
+    min-height: 60vh;
+    background-image: url("/Landing-Page/Top-bg.jpg");
+    background-size: cover;
+    background-position: 50% 60%;
+  }
+  #overlay {
+    min-height: inherit;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  #text {
+    position: absolute;
+    bottom: 20%;
+    padding: 0 10vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+  }
+
+  #text-right {
+   align-items: center;
+    width: 40%;
+    justify-content: space-between;
+    display: flex;
+  }
+  #text-right i{
+    color: #fff;
+  }
+
+  #text-right p{
+    font-size: 20px;
+    justify-content: space-between;
+    margin: 0% 3%;
+    width: 40%;
+  
+  }
+
+  #text h1 {
+    font-weight: 500;
+    font-size: 5vw;
+    position: relative;
+  }
+  #bottom {
+    display: flex;
+    width: 100%;
+    min-height: 40vh;
+    background-color: cadetblue;
+  }
+  #b-one {
+    width: 25%;
+    min-height: inherit;
+    background-color: #ffffff;
+    padding: 20px;
+    
+
+  }
+  #b-one p{
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  #b-two {
+    width: 25%;
+    min-height: inherit;
+    background-image: url('/Landing-Page/btwo\ bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  #b-three {
+    width: 20%;
+    min-height: inherit;
+    background-color: rgb(17, 99, 62);
+  }
+  #b-four {
+    width: 30%;
+    min-height: inherit;
+    background-color: #444;
+    color: #fff;
+    padding: 30px;
+  }
+  #icons i{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1vw;
+  }
+  #b-three-top{
+    width: 100%;
+min-height: 20vh;  
+  padding: 20px;
+    color:#fff;
+    background-color: orangered;
+  }
+  #b-three-top p{
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  #b-three-bottom{
+    width: 100%;
+    min-height: 20vh;  
+    background-image: url('/Landing-Page/bthree-bottom-bg.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  .notf{
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .notf #photo {
+    height: 40px;
+    width: 40px;
+    background-image: url("/Landing-Page/prof1.jpg");
+    
+     /* background-color: red; */
+    background-size: cover;
+    background-position: center;
+    border-radius:50% ;
+    
+  }
+  .notf p{
+    width: 85%;
+    font-size:20px;
+  }
+  #photo h3{
+    font-size: 1.5vw;
+  }
+
+  /* for mobile screens
+   */
+ @media(max-width:500px){
+  main{
+    min-height: 100vh;
+    width:100%;
+  }
+  #overlay #text{
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+  }
+  #text h1{
+    font-size: 8vw;
+    position: static;
+    text-align: center;
+    margin-bottom: px;
+  }
+  #overlay #text #text-right{
+    align-items: center;
+    flex-direction:column;
+    width: 100%;
+    margin-top: 20px;
+  }
+  #overlay #text #text-right p{
+    width: 90%;
+    margin: 10 px 0;
+    font-size: 4vw;
+    text-align: center;
+  }
+  #overlay #text #text-right #icons{
+   margin-top: 30px;  
+   font-size: 5vw;
+ }
+ #bottom{
+  flex-direction: column;
+  min-height: 20vh;
+  }
+ #b-one{
+  width: 100%;
+ }
+ #b-two{
+  width: 100%;
+ }
+ #b-three{
+  width: 100%;
+ }
+ #b-four{
+  width: 100%;
+ }
+ 
+}
